@@ -352,7 +352,7 @@ footer {
 .boxModelDiv {
   height: 100px;
   width: 100px;
-  transition: all 4s; 
+  transition: all 3s; 
 }
 
 .boxModelDiv:hover {

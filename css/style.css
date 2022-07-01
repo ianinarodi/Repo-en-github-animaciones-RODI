@@ -352,11 +352,11 @@ footer {
 .boxModelDiv {
   height: 100px;
   width: 100px;
-  transition: all:4s; 
+  transition: all 4s; 
 }
 
 .boxModelDiv:hover {
-    height: 250px;
+  height: 250px;
   width: 250px;
   background-color: #180611 ;
 }

@@ -9,73 +9,115 @@
 
     <link rel="stylesheet" href="css/style.css">
     
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
 </head>
 <body>
 
     <div id="elegirprof">
    
-        <header>
-            <h1>Brainlingual</h1>
-            <input id="inputHeader" type="button" value="INICIAR SESIÓN">
-            <input id="inputHeader" type="button" value="REGISTRARSE">
-            <input id="inputHeader" type="search" placeholder="Buscar...">
-
-        </header>
-
-        <nav><ul> 
-            <li> <a href="index.html" target="blank">Inicio</a> </li>
-            <li> <a href="form.html" target="blank">Contacto</a> </li>
-            <li> <a href="sobre-nosotros.html" target="blank">Sobre nosotros</a> </li>
-            <li> <a href="elegi-tu-profesor.html" target="blank">Elegí tu profesor</a>  </li>
-            <li> <a href="recomendaciones-de-alumnos.html" target="blank">Recomendaciones</a></li>
-            <li> <a href="https://instagram.com/brainlingual?igshid=YmMyMTA2M2Y=" target="blank">Instagram</a> </li>
-        </ul></nav>
-        
+        <header class="headerindex justify-content-center fs-5 headertodos" class="col-sm-12 col-lg-12" >
+      
+            <nav class="navbar" class="col-sm-12 col-lg-12" >
+               <div class="container-fluid">
+                 <img src="media/logobrainlingual.jpeg" class="justify-content-left" alt="logo" width="80" height="80">
+                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                   <span class="navbar-toggler-icon"></span>
+                 </button>
+                 <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                   <div class="offcanvas-header">
+                     <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Brainlingual</h5>
+                     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                   </div>
+                   <div class="offcanvas-body">
+                     <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                       <li class="nav-item">
+                         <a class="nav-link active" aria-current="page" href="index.html" target="blank">Inicio</a>
+                       </li>
+                       <li class="nav-item">
+                           <a class="nav-link active" aria-current="page" href="form.html" target="blank">Contacto</a>
+                         </li>
+                         <li class="nav-item">
+                           <a class="nav-link active" aria-current="page" href="sobre-nosotros.html" target="blank">Sobre nosotros</a> 
+                         </li>
+                         <li class="nav-item">
+                           <a class="nav-link active" aria-current="page" href="elegi-tu-profesor.html" target="blank">Elegí tu profesor</a>
+                         </li>
+                         <li class="nav-item">
+                           <a class="nav-link active" aria-current="page" href="recomendaciones-de-alumnos.html" target="blank">Recomendaciones</a>
+                         </li>
+                         <li class="nav-item">
+                           <a class="nav-link active" aria-current="page" href="https://instagram.com/brainlingual?igshid=YmMyMTA2M2Y=" target="blank">Instagram</a>
+                         </li>
+                       <li class="nav-item dropdown">
+                         <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                           Elegi profesor:
+                         </a>
+                         <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                           <li><a class="dropdown-item" href="#">Hablante nativo</a></li>
+                           <li><a class="dropdown-item" href="#">Hablante no nativo</a></li>
+                         </ul>
+                       </li>
+                     </ul>
+                     <form class="d-flex" role="search">
+                       <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                       <button class="btn btn-outline-success" type="submit">Search</button>
+                     </form>
+                   </div>
+                 </div>
+               </div>
+             </nav>
+   </header>
    
 
-
-    <form class="formularioprof" action="" method="GET" enctype="multipart/form-data"> 
-
-        <fieldset>
-            <legend>Elegí profesor de acuerdo a:</legend>
-            
-         
-          <label for="aprender">Quiero aprender:</label>
-             <select name="aprender" id="">
-                 <option value="Inglés conversacional">Inglés conversacional</option>
-                 <option value="Inglés de negocios">Inglés de negocios</option>
-                 <option value="Inglés por tema en especifico">Inglés por tema en especifico</option>
-                 <option value="Inglés deesde cero">Inglés deesde cero</option>
-             </select>
-
-             <label for="Elige los dias para cursar"> Elige los días para cursar:</label>
-             <select name="Elige los dias para cursar" id="">
+   <section class="w-50 mx-auto text-center pt-5" id="textoenintro" class="col-sm-12 col-lg-12">
+    <h1 class=" p-3 fs-2 border-top border-3">Como elegir<span class="text-primary"> profesores</span></h1>
+  </section>
+     
+     <div class="d-flex justify-content-center"> 
+      <select class="form-select m-3" aria-label="Default select example">
+        <option selected>Elegí profesor de acuerdo a</option>
+        <option value="1">Inglés conversacional</option>
+        <option value="2">Inglés de negocios</option>
+        <option value="3">Inglés por tema en especifico</option>
+        <option value="3">Inglés deesde cero</option>
+      </select>
+      
+      <select class="form-select m-3" aria-label="Default select example">
+        <option selected>Elige los dias para cursar</option> 
                 <option value="Lunes, miércoles y viernes">Lunes, miércoles y viernes</option>
                 <option value="Lunes y miércoles">Lunes y miércoles</option>
                 <option value="Martes y jueves">Martes y jueves</option>
                 <option value="Sábado">Sábado</option>
             </select>
 
-            <label for="Elige en que momento del dia cursar"> Elige en que momento del día para cursar:</label>
-             <select name="Elige en que momento del dia cursar" id="">
+            <select class="form-select m-3" aria-label="Default select example">
+              <option selected>Elige en que momento del dia cursar</option>
                 <option value="Mañana">Mañana</option>
                 <option value="Tarde">Tarde</option>
                 <option value="Noche">Noche</option>
             </select>
+       </div>
 
-            
-            <input type="submit" value="ENVIAR">
-       <input type="reset" value="RESETEAR">
-       <input type="button" value="BOTON">
+<div class="d-flex justify-content-center">  
+    <input class="m-4" type="submit" value="ENVIAR">
+       <input class="m-4" type="reset" value="RESETEAR">
+     <input  class=" m-4" type="button" value="BOTON">
+  </div>
+       
 
-        </fieldset> </form>
 
-
-<footer>
-    <button> <a class="redes" href="https://instagram.com/brainlingual?igshid=YmMyMTA2M2Y=" target="blank"></a>  IG </button>
-    <button> <a class="redes" href="https://facebook.com/ianina.rodi=" target="blank"></a>  FB </button>
-</footer>
+        <footer class="p-5 mt-5"> 
+            <div class="footer1">
+              <button> <a class="redes" href="https://instagram.com/brainlingual?igshid=YmMyMTA2M2Y=" target="blank"> <i class="bi bi-instagram fs-5"></i></a>  </button>
+              <button> <a class="redes" href="https://facebook.com/ianina.rodi=" target="blank"> <i class="bi bi-facebook fs-5"></i></a>  </button>
+              <button> <a class="redes" href=# target="blank"> <i class="bi bi-whatsapp fs-5"></i></a> </button>
+          </div>
+        </footer>
 
 </div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>

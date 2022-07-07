@@ -3,177 +3,31 @@
      padding: 0;
     } */
 
-li {
-    display: inline;
-    width: 35%;
-    position: relative;
-    font-size: 15px;
-    font-family: sans-serif;
-    justify-content:space-between;
-    margin-inline: 10px;
-}
+   body {
+        font-family:sans-serif #ff6363; 
+        background-color: #fff1f1;
+        overflow:visible
+        
+    }
 
-ul ul {
-    position:absolute;
-    display: none;
+.carousel-inner { 
+    max-height: 35rem;
 
 }
 
-ul ul li {
-    display: block;
-    
-}
-
-ul li:hover ul {
-    display: block;
-}
-
-ul li li:hover {
-    background-color: rgb(121, 117, 117);
-}
-
-
-.boxModelDiv {
-    background-color: rgb(236, 187, 187);
-    width: 200px;
-    height: 150px;
-    margin: 10px 10px 10px 10px;
-    padding: 5px 10px 10px 10px;
-    border: inset 5px;
-    display:grid;
-    position: relative; 
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    overflow: auto;
-    
-}
-
-.ulNav li  {
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-
-aside ul li a {
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    text-align: left;
-    justify-content: left;
-    justify-items: left;
-    justify-items: top;
-   display: block;
-    position: relative;
-}
-
-aside > h3 {
-    display: flex;
-    position: absolute;
-    justify-content: center;
+.contenedorcards {
+    width: 100%;
     text-align: center;
-    justify-items: center;
-    margin: 3px;
-
-}
-
-
-body {
-    color: #ad307d;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-
-
-header,nav,aside,.sectionn,.boxModelDiv,.aside__li ,footer {
-    border-radius: 10px;
-    display: grid;
-}
-
-.sectionn,aside {
-    background-color: #eec4f7;
-}
-
-header, footer,nav {
-    background-color: #eec4f7;
-}
-
-h1 {
-    display: inline;
-}
-
-
-a, button {
-    text-decoration: none;
-    color: #ad307d;
-}
-
-button {
-    border-radius: 1px;
-    background-color: white;
-    padding: 1px;
-    align-items: center;
-    margin: 5px;
-}
-
-.redes {
-    font-size: large;
-    font-weight: bold;
-    padding: 5px;
-    margin: 5px;
-    justify-content: center
-}
-
-nav {
-    font-size: large;
-    font-weight: 500;
-}
-
-aside {
-    padding: 5px;
     
 }
 
-aside ul li  {
-    padding: 2px;
-    justify-content: left;
-    justify-items: left;
+.navbar {
+    background-color: #ff6363;
    
 }
 
-header {
-    padding: 10px;
-}
-
-nav ul a {
-    padding: 10px;
-}
-
-nav ul {
-    margin-left: 20px;
-}
-
-.aside__li, .boxModelDiv {
-    background-color: white;
-    text-align: center;
-}
-
- 
-img {
-    width: 100px;
-    height: 60px;
-}
-
-.sectionn {
-    padding: 20px;
-}
-
-.item {
-    background-color: #ad307d;
-    color: white;
-}
-
-header, footer {
-    display: flex;
-    align-items: center;
-
-}
 
 header {
-    grid-area: header ;
     justify-content: space-between;
 }
 
@@ -181,371 +35,33 @@ nav {
     grid-area:nav;
 }
 
-aside {
-    grid-area: aside;
-    display:grid;
-    position: relative;
+.bi-whatsapp {
+    margin: 5px;
+    color: lightcoral;
     
+
 }
 
-
-.sectionn {
-    grid-area: sectionn;
-    display: grid;
+.bi-facebook{
+    margin: 5px;
+    color: lightcoral;
    
 }
 
-.boxModelDiv {
-    grid-area: boxModelDiv;
-    display: inline-flex;
-    position:relative;
-    justify-content:center;
-}
-
-.aside__li{
-    grid-area: aside__li;
-    display: inline-flex;
-    position:relative;
-    justify-content:center;
-}
-
-.aside__li > li {
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: large;
+.bi-instagram {
+    margin: 5px;
+    color: lightcoral;
+    
 }
 
 footer {
-    grid-area: footer;
+    background-color: #ff6363;
+    justify-items: center;
+}
+
+.footer1 {
+    justify-items: center;
     justify-content: center;
-}
-
-
-#main {
-    grid-area: main;
-}
-
-#main {
-    width: 100%;
-    height: 600px;
-    display: grid;
-    grid-template-columns: 20% auto auto;  
-    grid-template-rows: auto auto auto auto auto auto;
-    column-gap: 5px;
-    row-gap: 5px;
-    display: grid;
-    grid-template-areas: "header header header " 
-                          "nav nav nav"
-                         "aside sectionn sectionn" 
-                         "aside boxModelDiv boxModelDiv"   
-                         "aside aside__li aside__li"  
-                         " footer footer footer";
-}
-
-
-#aboutUs {
-    width: 100%;
-    height: 600px;
-    display: grid;
-    grid-template-columns: repeat ( 2, auto) ;  
-    grid-template-rows:repeat (4, auto) ;
-    column-gap: 5px;
-    row-gap: 5px;
-    display: grid;
-    grid-template-areas: "header header  " 
-                          "tabla1 tabla1"
-                          "tabla2 tabla2" 
-                         " footer footer ";
-
-    }
-
-
-    .tabla1 {
-        grid-area: tabla1;
-    } 
-
-    .tabla2 {
-    grid-area: tabla2;
- }
-
-    #contacto{
-        width: 100%;
-        height: 600px;
-        display: grid;
-        grid-template-columns: repeat ( 2, auto) ;  
-        grid-template-rows:repeat (4, auto) ;
-        column-gap: 5px;
-        row-gap: 5px;
-        display: grid;
-        grid-template-areas: "header header" 
-                              "nav nav"
-                              "formulario formulario"
-                              "footer footer";
-    }
-
-    .formulario {
-        grid-area: formulario;
-    }
-
-
-    #recomendaciones {
-        width: 100%;
-        height: 600px;
-        display: grid;
-        grid-template-columns: repeat ( 2, auto) ;  
-        grid-template-rows:repeat (4, auto) ;
-        column-gap: 5px;
-        row-gap: 5px;
-        display: grid;
-        grid-template-areas: "header header" 
-                              "nav nav"
-                              "tablarecomendaciones tablarecomendaciones"
-                              "footer footer";
-    }
-
-    .tablarecomendaciones {
-        grid-area: tablarecomendaciones ;
-    }
-
-#elegirprof {
-        width: 100%;
-         height: 600px;
-        display: grid;
-        grid-template-columns: repeat ( 2, auto) ;  
-        grid-template-rows:repeat (4, auto) ;
-        column-gap: 5px;
-        row-gap: 5px;
-        display: grid;
-        grid-template-areas: "header header" 
-                              "nav nav"
-                              "formularioprof formularioprof"
-                              "footer footer";
-}
-
-.formularioprof  {
-    grid-area: formularioprof;
-}
-
-
-.headerindex  {
-    height: 100%;
-    background-color: #ad307d ;
-    animation-name: header1;
-    animation-iteration-count:infinite;
-    animation-timing-function: ease-in;
-    animation-duration: 3s;
-    animation-delay: 1s;
-}
-
-@keyframes header1 {
-    0% {background-color: #e98fc6 }
-    25% {background-color: #860856; }
-    50% {background-color:#bd167d;}
-    75% {background-color: #e24aa8; }
-    100% {background-color: #e98fc6; }
-}
-
-.logoindex {
-    color: black;
-}
-
-
-.boxModelDiv {
-  height: 100px;
-  width: 100px;
-  transition: all 3s; 
-}
-
-.boxModelDiv:hover {
-  height: 250px;
-  width: 250px;
-  background-color: #180611 ;
-}
-
-
-
-@media screen and (min-width: 1200px) {
- 
-    #main {
-    grid-template-columns: repeat (3, auto);  
-    grid-template-rows: auto ;
-    column-gap: 5px;
-    row-gap: 5px;
-    display: grid;
-    grid-template-areas: "header header header " 
-                          "nav nav nav"
-                          "aside sectionn sectionn" 
-                          "aside boxModelDiv boxModelDiv"   
-                           "aside aside__li aside__li"  
-                          " footer footer footer";
-      } 
-
-section {
-        
-    grid-template-columns: repeat (2, auto) ;
-    grid-template-rows: repeat (2, auto);
-    grid-gap: 5px;
-
-}
-
-  aside {
-    display: flex;
-    position: relative;
-    justify-content: left;
-    justify-items: left;
-    text-align:left;
-    align-items: flex-start;
-   }
-
- #mainmenu {
-    display: none;
-   }
-
-
-   #main {
-    display: grid;
-    }
-
-
-    #aboutUs {
-    width: 100%;
-    height: 600px;
-    display: grid;
-    grid-template-columns: repeat ( 2, auto) ;  
-    grid-template-rows:repeat (4, auto) ;
-    column-gap: 5px;
-    row-gap: 5px;
-    display: grid;
-    grid-template-areas: "header header " 
-                             "nav nav"
-                          "tabla1 tabla1"
-                          "tabla2 tabla2" 
-                         " footer footer ";
-
-    }
-
-
-    #contacto{
-        width: 100%;
-        height: 600px;
-        display: grid;
-        grid-template-columns: repeat ( 2, auto) ;  
-        grid-template-rows:repeat (4, auto) ;
-        column-gap: 5px;
-        row-gap: 5px;
-        display: grid;
-        grid-template-areas: "header header" 
-                              "nav nav"
-                              "formulario formulario"
-                              "footer footer";
-    }
-
-    #recomendaciones {
-        width: 100%;
-        height: 600px;
-        display: grid;
-        grid-template-columns: repeat ( 2, auto) ;  
-        grid-template-rows:repeat (4, auto) ;
-        column-gap: 5px;
-        row-gap: 5px;
-        display: grid;
-        grid-template-areas: "header header" 
-                              "nav nav"
-                              "tablarecomendaciones tablarecomendaciones"
-                              "footer footer";
-    }
-
-    #elegirprof {
-        width: 100%;
-         height: 600px;
-        display: grid;
-        grid-template-columns: repeat ( 2, auto) ;  
-        grid-template-rows:repeat (4, auto) ;
-        column-gap: 5px;
-        row-gap: 5px;
-        display: grid;
-        grid-template-areas: "header header" 
-                              "nav nav"
-                              "formularioprof formularioprof"
-                              "footer footer";
-     }
   
 }
 
-
- @media screen and (max-width: 500px) {
-    #main {
-   
-        grid-template-columns: 1fr ;
-        grid-template-rows: repeat (7, auto);
-        column-gap: 5px;
-        row-gap: 5px;
-        display: grid;
-        grid-template-areas: "header" "nav " "aside " "sectionn " ".boxModelDiv" 
-        ".aside__li " " footer";
-    
-    }
-    
-
-    #aboutUs {
-        width: 100%;
-        height: 600px;
-        display: grid;
-        grid-template-columns: repeat (1, auto) ;  
-        grid-template-rows:repeat (4, auto) ;
-        column-gap: 5px;
-        row-gap: 5px;
-        display: grid;
-        grid-template-areas: "header " 
-                                "nav"
-                              "tabla1 "
-                              "tabla2 " 
-                             " footer";
-    
-        }
-
-        #contacto {
-            width: 100%;
-            height: 600px;
-            display: grid;
-            grid-template-columns: repeat ( 1, auto) ;  
-            grid-template-rows:repeat (4, auto) ;
-            column-gap: 5px;
-            row-gap: 5px;
-            display: grid;
-            grid-template-areas: "header " 
-                                  "nav "
-                                  "formulario"
-                                  "footer";
-        }
-
-        #recomendaciones {
-            width: 100%;
-            height: 600px;
-            display: grid;
-            grid-template-columns: repeat ( 1, auto) ;  
-            grid-template-rows:repeat (4, auto) ;
-            column-gap: 5px;
-            row-gap: 5px;
-            display: grid;
-            grid-template-areas: "header " 
-                                  "nav "
-                                  " tablarecomendaciones"
-                                  " footer";
-        }
-    
-        #elegirprof {
-            width: 100%;
-             height: 600px;
-            display: grid;
-            grid-template-columns: repeat ( 1, auto) ;  
-            grid-template-rows:repeat (4, auto) ;
-            column-gap: 5px;
-            row-gap: 5px;
-            display: grid;
-            grid-template-areas: "header " 
-                                  "nav "
-                                  "formularioprof"
-                                  " footer";
-    }
-
-}

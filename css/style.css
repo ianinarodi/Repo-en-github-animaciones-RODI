@@ -1,77 +1,9 @@
- /* *  {
+/* *  {
      margin: 0;
      padding: 0;
-    } */
+    } 
 
-   body {
-        font-family:sans-serif #ff6363; 
-        background-color: #fff1f1;
-        overflow:visible
-        
-    }
-
-.carousel-inner { 
-    max-height: 35rem;
-
-}
-
-.contenedorcards {
-    width: 100%;
-    text-align: center;
-    
-}
-
-.navbar {
-    background-color: #ff6363;
-   
-}
-
-
-header {
-    justify-content: space-between;
-}
-
-nav {
-    grid-area:nav;
-}
-
-.bi-whatsapp {
-    margin: 5px;
-    color: lightcoral;
-    
-
-}
-
-.bi-facebook{
-    margin: 5px;
-    color: lightcoral;
-   
-}
-
-.bi-instagram {
-    margin: 5px;
-    color: lightcoral;
-    
-}
-
-footer {
-    background-color: #ff6363;
-    justify-items: center;
-}
-
-.footer1 {
-    justify-items: center;
-    justify-content: center;
-  
-}
-
-@media  (orientation: landscape) and (max-width: 950px)   {
-    body{
-    background-color: rgb(233, 159, 233);
-     }
-}
-
-#inputHeader {
+     #inputHeader {
     background-color: #b57edc;
     border-radius: 45%;
     margin: 8px;
@@ -79,23 +11,79 @@ footer {
 
 #inputHeader:hover {
     background-color: #602d85;
+}*/
+body {
+  font-family: sans-serif #ff6363;
+  background-color: #fff1f1;
+  overflow: visible;
 }
 
+.carousel-inner {
+  max-height: 35rem;
+}
+
+.contenedorcards {
+  width: 100%;
+  text-align: center;
+}
+
+.navbar {
+  background-color: #ff6363;
+}
+
+header {
+  justify-content: space-between;
+}
+
+nav {
+  grid-area: nav;
+}
+
+.bi-whatsapp {
+  margin: 5px;
+  color: lightcoral;
+}
+
+.bi-facebook {
+  margin: 5px;
+  color: lightcoral;
+}
+
+.bi-instagram {
+  margin: 5px;
+  color: lightcoral;
+}
+
+@media (orientation: landscape) and (max-width: 950px) {
+  body {
+    background-color: rgb(233, 159, 233);
+  }
+}
 .unite {
-    transition: all 1s; 
-  }
-  
-  .unite:hover {
-    background-color: #ff6363 ;
-  }
+  transition: all 1s;
+}
+.unite:hover {
+  background-color: #ff6363;
+}
 
-  footer a:active {
-    background-color:#b57edc; 
-  }
+#inputHeader {
+  background-color: #b57edc;
+  border-radius: 45%;
+  margin: 8px;
+}
+#inputHeader:hover {
+  background-color: #602d85;
+}
 
-  footer button:active {
-    background-color:#b57edc; 
-  }
-  
-
- 
+footer {
+  justify-items: center;
+  justify-content: center;
+  background-color: #ff6363;
+  justify-items: center;
+}
+footer button:active {
+  background-color: #b57edc;
+}
+footer footer a:active {
+  background-color: #b57edc;
+}/*# sourceMappingURL=style.css.map */

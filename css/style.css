@@ -1,17 +1,15 @@
-/* *  {
-     margin: 0;
-     padding: 0;
-    } 
-
-     #inputHeader {
-    background-color: #b57edc;
-    border-radius: 45%;
-    margin: 8px;
+.bi-instagram {
+  color: red;
 }
 
-#inputHeader:hover {
-    background-color: #602d85;
-}*/
+.bi-facebook {
+  color: blue;
+}
+
+.bi-whatsapp {
+  color: green;
+}
+
 body {
   font-family: sans-serif #ff6363;
   background-color: #fff1f1;
@@ -39,21 +37,6 @@ nav {
   grid-area: nav;
 }
 
-.bi-whatsapp {
-  margin: 5px;
-  color: lightcoral;
-}
-
-.bi-facebook {
-  margin: 5px;
-  color: lightcoral;
-}
-
-.bi-instagram {
-  margin: 5px;
-  color: lightcoral;
-}
-
 @media (orientation: landscape) and (max-width: 950px) {
   body {
     background-color: rgb(233, 159, 233);
@@ -66,6 +49,21 @@ nav {
   background-color: #ff6363;
 }
 
+.unitetitulo {
+  font-family: monospace;
+  font-size: 38px;
+}
+
+.unitetexto, .contactotexto {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 20px;
+}
+
+.contactotitulo {
+  font-size: 38px;
+  font-family: monospace;
+}
+
 #inputHeader {
   background-color: #b57edc;
   border-radius: 45%;
@@ -76,6 +74,7 @@ nav {
 }
 
 footer {
+  display: flex;
   justify-items: center;
   justify-content: center;
   background-color: #ff6363;
@@ -86,4 +85,32 @@ footer button:active {
 }
 footer footer a:active {
   background-color: #b57edc;
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*
+.bi-whatsapp {
+    margin: 5px;
+    color: lightcoral;
+}
+
+.bi-facebook{
+    margin: 5px;
+    color: lightcoral;  
+}
+
+.bi-instagram {
+    margin: 5px;
+    color: lightcoral;   
+}
+
+ .botonesredes .p-3 .footer1{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    align-items: flex-end;
+ } */
+ 
+ 
+ /*# sourceMappingURL=style.css.map */

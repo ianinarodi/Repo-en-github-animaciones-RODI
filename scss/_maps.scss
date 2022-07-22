@@ -1,0 +1,8 @@
+
+$mapRedes: (bi-instagram: red, bi-facebook:blue, bi-whatsapp: green);
+
+@each $red, $color in $mapRedes {
+    .#{$red} {
+        color: $color;
+    }
+}

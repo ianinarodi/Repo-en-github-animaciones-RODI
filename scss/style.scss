@@ -38,7 +38,8 @@ body {
     margin: 0;
 }
 
-html,body {
+html,
+body {
     min-height: 100%;
 }
 
@@ -83,6 +84,10 @@ html,body {
     @extend .unitetexto;
 }
 
+.ultimoelemento {
+    margin-bottom: 20%;
+}
+
 /* ESTILOS PARA CAROUSEL Y CARDS */
 
 .carousel-inner {
@@ -94,26 +99,21 @@ html,body {
     text-align: center;
 }
 
-/*FOTO CAROUSEL*/
-.fotorosa {
-    width: 100%;
-    height: 100%;
-    margin-top: 38px;
-}
 
 /* FOOTER Y BOTONES DE FOOTER */
-
 footer {
     display: flex;
     justify-items: center;
     justify-content: center;
     background-color: $colorSecundario;
     justify-items: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 
     button:active {
         background-color: $Lilaclaro;
     }
-
     footer {
         a:active {
             background-color: $Lilaclaro;
@@ -121,12 +121,16 @@ footer {
     }
 }
 
+.botonesredes {
+    height: 30px;
+}
+
 .bi-whatsapp {
-    margin: 5px;
+    margin: 5px;    
 }
 
 .bi-facebook {
-    margin: 5px;
+    margin: 5px;   
 }
 
 .bi-instagram {

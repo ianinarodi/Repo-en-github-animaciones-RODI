@@ -47,7 +47,8 @@ body {
   margin: 0;
 }
 
-html, body {
+html,
+body {
   min-height: 100%;
 }
 
@@ -78,6 +79,10 @@ html, body {
   font-family: monospace;
 }
 
+.ultimoelemento {
+  margin-bottom: 20%;
+}
+
 /* ESTILOS PARA CAROUSEL Y CARDS */
 .carousel-inner {
   max-height: 35rem;
@@ -102,12 +107,19 @@ footer {
   justify-content: center;
   background-color: #ff6363;
   justify-items: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
 footer button:active {
   background-color: #b57edc;
 }
 footer footer a:active {
   background-color: #b57edc;
+}
+
+.botonesredes {
+  height: 30px;
 }
 
 .bi-whatsapp {
